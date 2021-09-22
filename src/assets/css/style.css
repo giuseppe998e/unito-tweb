@@ -1,0 +1,160 @@
+/* General */
+body {
+  background-color: #DAE0E6;
+  font-family: IBMPlexSans, sans-serif;
+  font-weight: 400;
+}
+
+body.modal-open #root {
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.navbar-light {
+  background-color: #FFFFFF;
+}
+
+.card {
+  border-radius: 5px !important;
+  border: 1px solid #CCCCCC;
+}
+
+.card-header {
+  background-color: #007BFF;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+#posts .post:hover {
+  border: 1px solid #000000;
+}
+
+#navbar-dropdown img {
+  height: 20px;
+  border-radius: 2.5px;
+}
+
+.color-site-bg {
+  background-color: #33A8FF;
+}
+
+
+/* Alerts Zone */
+#alerts-zone {
+  z-index: 1050;
+  position: fixed;
+  right: 0.8rem;
+  bottom: 0;
+}
+
+
+/* Forum */
+.forum-head {
+  background-color: #FFFFFF;
+  height: 175px;
+  max-height: 200px;
+}
+
+.forum-head-info {
+  overflow: hidden;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#forum-title {
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+#forum-uri {
+  color: #878A8C;
+  font-weight: 500;
+}
+
+#forum-img {
+  background-color: #FFFFFF;
+  margin-top: -1rem;
+  border: 3px #FFFFFF solid;
+  height: 90px;
+  width: 90px;
+}
+
+.forum-about-date {
+  font-size: 0.8rem;
+}
+
+
+/* User */
+#user-about {
+  overflow: hidden;
+}
+
+#user-about .card-about-bg {
+  height: 70px;
+}
+
+#user-about img {
+  width: 76px;
+  margin-top: -84px;
+  border: 4px #FFFFFF solid;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+}
+
+/* Register */
+.register {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.reg-photo {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.reg-photo #photo-preview {
+  margin-left: auto;
+  margin-right: auto;
+  height: 128px;
+  width: 128px;
+}
+
+.reg-photo #uploader {
+  border: 2px #000000 dashed;
+  flex-grow: 0.35;
+  height: 156px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.is-dragover {
+  background-color: #F5F5F5;
+}
+
+/* Responsive */
+@media (min-width: 992px) { 
+  #alert-zone {
+    width: 25%;
+  }
+
+  .forum-head-content {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}

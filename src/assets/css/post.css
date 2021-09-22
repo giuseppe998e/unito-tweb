@@ -1,0 +1,110 @@
+/* Post */
+.post {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #CCCCCC;
+  overflow: hidden;
+}
+
+.post-block {
+  flex: 1 1 auto;
+  min-height: 1px;
+  display: flex;
+  flex-flow: row;
+}
+
+.post-left {
+  background-color: #F7F9FA;
+  text-align: center;
+  user-select: none;
+  font-weight: bold;
+  display: flex;
+  flex-flow: column;
+  padding: 1rem;
+}
+
+.arrow-up,
+.arrow-down {
+  color: #878A8C;
+}
+
+.arrow-up:hover {
+  color: #CC3700;
+}
+
+.arrow-down:hover {
+  color: #5A75CC;
+}
+
+.post-right {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  padding: 0 0.25rem;
+  padding-right: 1rem;
+}
+
+.post-head,
+.post-footer {
+  user-select: none;
+  font-size: 0.85rem;
+  padding: 0.2rem 0;
+  color: #878A8C;
+}
+
+.post-head a,
+.post-footer a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.post-head .post-user,
+.post-footer a {
+  color: inherit;
+}
+
+.post-head .post-user:hover,
+.post-footer a:hover {
+  color: #616465;
+}
+
+.post-footer {
+  font-weight: bold;
+}
+
+.post-body {
+  flex-grow: 1;
+  position: relative;
+}
+
+.post-body h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+/* Comments */
+.comment {
+  display: flex;
+  flex-flow: column;
+  padding: 0.25rem;
+}
+
+.comment-head {
+  user-select: none;
+  font-size: 0.85rem;
+  color: #878A8C;
+  padding-left: 0.25rem;
+  border-left: 3px solid #EDEFF1;
+}
+
+.comment-head a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.comment-body {
+  flex-grow: 1 1 auto;
+  padding-left: 0.25rem;
+  border-left: 3px solid #EDEFF1;
+}
